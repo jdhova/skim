@@ -13,14 +13,13 @@ class input extends Component {
 
         handleChange = (e) => {
             this.setState({value: e.target.value})
-            // console.log('whattts', this.state.value)
+            
         }
     
 
         onSubmit = (e) => {
             e.preventDefault()
-            this.setState ({finalValue: this.state.value})
-            console.log('heheh', this.state.finalValue)
+            this.setState ({ finalValue: this.state.value})
             this.setState({value: ''})
             
            
@@ -30,7 +29,10 @@ class input extends Component {
        
 
         render() { 
-        
+
+                const strval = this.state.finalValue
+                const intval = parseInt(strval)
+                
             return (
               <div className = 'input'> 
                     <form >
@@ -38,12 +40,16 @@ class input extends Component {
                         <button onClick = {this.onSubmit} type="button" className="btn btn-primary">Enter Integer</button>  
                     </form>  
 
-                    <h2 >
+                    {/* <h3>{(this.state.finalValue)}</h3> */}
+
+                    <h3>{work(intval)}</h3>
+
+                    {/* <h2 >
                     { (this.state.finalValue% 15 === 0) ? "SKIM is a nice place to work" :
                         (this.state.finalValue % 3 === 0)  ? "is a nice place to work"     : 
                         (this.state.finalValue % 5 === 0)  ? "SKIM"     : 
                         this.state.finalValue }
-                        </h2>
+                        </h2> */}
 
               </div>
             )

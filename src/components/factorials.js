@@ -1,8 +1,8 @@
 
 import React, { Component } from 'react'
-import work from './algorithms/work'
+import factorial from './algorithms/factorial'
 
-class factorial extends Component {
+class factorials extends Component {
     constructor(props){
         super(props)
             this.state = {
@@ -20,16 +20,18 @@ class factorial extends Component {
         onSubmit = (e) => {
             e.preventDefault()
             this.setState ({finalValue: this.state.value})
-            console.log('heheh', this.state.finalValue)
+            // console.log('heheh', this.state.finalValue)
             this.setState({value: ''})
-            
-           
+                      
             
         }
 
        
 
         render() { 
+
+            const strval = this.state.finalValue
+             const intval = parseInt(strval)
         
             return (
               <div className = 'input'> 
@@ -39,7 +41,9 @@ class factorial extends Component {
                     </form>  
 
                     <h2 >
-                 here is where i am
+{/*                  
+                 {factorial(this.state.finalValue)} */}
+                 {factorial(intval)}
                         </h2>
 
               </div>
@@ -50,5 +54,5 @@ class factorial extends Component {
   
 
 
-export default factorial
+export default factorials
 
