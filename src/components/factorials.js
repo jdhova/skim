@@ -2,7 +2,7 @@
 import React, { Component } from 'react'
 import work from './algorithms/work'
 
-class input extends Component {
+class factorial extends Component {
     constructor(props){
         super(props)
             this.state = {
@@ -39,10 +39,7 @@ class input extends Component {
                     </form>  
 
                     <h2 >
-                    { (this.state.finalValue% 15 === 0) ? "SKIM is a nice place to work" :
-                        (this.state.finalValue % 3 === 0)  ? "is a nice place to work"     : 
-                        (this.state.finalValue % 5 === 0)  ? "SKIM"     : 
-                        this.state.finalValue }
+                 here is where i am
                         </h2>
 
               </div>
@@ -53,5 +50,5 @@ class input extends Component {
   
 
 
-export default  input
+export default factorial
 
