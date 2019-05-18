@@ -5,8 +5,8 @@ npm install to install dependencies
 ### To Start
 npm start
 
-### Front end frame work
-React.js
+### Front-end frame work
+React.js and bootstrap -v 4.3.1
 
 
 

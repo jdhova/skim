@@ -8,9 +8,16 @@
   align-items: center;
   text-align: center;
   min-height: 100vh;
+  background-image: url('./image/rotterdam.jpg');
+  background-size: cover;
+  background-position: center center;
+  
 }
 
+.fac h3{
+  color: aquamarine;
 
+}
   
 @media screen and (max-width: 400px) {
   .row { 
@@ -21,6 +28,11 @@
  }
 }
 
+@media only screen and (max-width: 767px) {
+  .row {
+    background-image: url('./image/rotterdam.jpg');
+  }
+	}
 
 
 

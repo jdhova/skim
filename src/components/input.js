@@ -14,7 +14,7 @@ class input extends Component {
         }
 
         handleChange = (e) => {
-            this.setState({value: e.target.value})
+            this.setState({value: parseInt(e.target.value)})
             
         }
 
@@ -35,7 +35,7 @@ class input extends Component {
                 <form className="form-inline">
                         <div className="form-group mx-sm-3 mb-2">
                         <label htmlFor="inputPassword2" className="sr-only">Enter integer</label>
-                        <input type="text" className="form-control" value = {this.state.value} onChange = {this.handleChange}  placeholder="Enter integer" />
+                        <input type="number" className="form-control" value = {this.state.value} onChange = {this.handleChange}  placeholder="Enter integer" />
                         </div>
                         <button type="submit" onClick = {this.onSubmit} className="btn btn-primary mb-2">Submit</button>
                     </form>
