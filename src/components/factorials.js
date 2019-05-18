@@ -12,6 +12,7 @@ class factorials extends Component {
         }
 
         handleChange = (e) => {
+            // handle if value is integer here
             this.setState({value: e.target.value})
             // console.log('whattts', this.state.value)
         }
@@ -31,7 +32,7 @@ class factorials extends Component {
         render() { 
 
             const strval = this.state.finalValue
-             const intval = parseInt(strval)
+            const intval = parseInt(strval)
         
             return (
               <div className = 'input'> 

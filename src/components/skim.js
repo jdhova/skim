@@ -2,11 +2,12 @@
 import React, { Component } from 'react'
 import Input from './input'
 import Factorials from './factorials'
+import '../App.css';
 
 class skim extends Component {
   render() {
     return (
-      <div>
+      <div className ='row'>
         <Input/>
         <Factorials />
 
@@ -16,4 +17,6 @@ class skim extends Component {
 }
 
 export default skim
+
+
 
