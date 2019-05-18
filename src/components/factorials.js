@@ -15,15 +15,11 @@ class factorials extends Component {
         handleChange = (e) => {
             this.setState({value: parseInt(e.target.value)})         
         }
-    
-
         onSubmit = (e) => {
             e.preventDefault()
             this.setState ({finalValue: this.state.value})
             this.setState({value: ''})    
         }
-
-       
 
         render() { 
             const strval = this.state.finalValue
@@ -38,11 +34,9 @@ class factorials extends Component {
                         </div>
                         <button type="submit" onClick = {this.onSubmit} className="btn btn-primary mb-2">Submit</button>
                     </form>
-
                     <h3 className='fac'>
-                 {factorial(intval)}
-                        </h3>
-
+                         {factorial(intval)}
+                    </h3>
               </div>
             )
           }

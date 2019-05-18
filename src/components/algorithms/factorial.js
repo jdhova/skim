@@ -11,7 +11,7 @@ const factorial = function input (n) {
       if(n === 1) { return 1  
     } // recursion base
 
-     if (n > 19) { return ('number is greater than 18')
+     if (n > 18) { return ('Number should be less than 18')
     }
    
     return n * input(n-1) 
