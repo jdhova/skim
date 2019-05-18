@@ -18,9 +18,6 @@ class input extends Component {
             
         }
 
-       
-    
-
         onSubmit = (e) => {
             e.preventDefault()
             this.setState ({ finalValue: this.state.value})
@@ -28,26 +25,24 @@ class input extends Component {
             
         }
 
-
-
         render() { 
 
-                // const strval = this.state.finalValue
-                // const intval = parseInt(strval)           
+                const strval = this.state.finalValue
+                const intval = parseInt(strval)           
                 
             return (
-              <div className = 'input'> 
-
-                    <form>
-                    
-                        <input type="text" value = {this.state.value} onChange = {this.handleChange}  placeholder = 'enter integer'/> 
-                        <button onClick = {this.onSubmit} type="button" className="btn btn-primary">Enter Integer</button>  
-                     
+              <div className = 'input'>    
+                <form className="form-inline">
+                        <div className="form-group mx-sm-3 mb-2">
+                        <label htmlFor="inputPassword2" className="sr-only">Enter integer</label>
+                        <input type="text" className="form-control" value = {this.state.value} onChange = {this.handleChange}  placeholder="Enter integer" />
+                        </div>
+                        <button type="submit" onClick = {this.onSubmit} className="btn btn-primary mb-2">Submit</button>
                     </form>
 
                     {/* <h3>{(this.state.finalValue)}</h3> */}
 
-                    {/* <h3>{work(intval)}</h3> */}
+                    <h3>{work(intval)}</h3>
 
 
                     <h2 >
@@ -55,7 +50,7 @@ class input extends Component {
                         (this.state.finalValue % 3 === 0)  ? "SKIM": 
                         (this.state.finalValue % 5 === 0)  ? "is a nice place to work": 
                         this.state.finalValue }
-                        </h2>
+                       </h2>
 
               </div>
             )

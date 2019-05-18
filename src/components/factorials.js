@@ -36,16 +36,19 @@ class factorials extends Component {
         
             return (
               <div className = 'input'> 
-                    <form >
-                        <input type="text" value = {this.state.value} onChange = {this.handleChange}  placeholder = 'enter integer'/> 
-                        <button onClick = {this.onSubmit} type="button" className="btn btn-primary">Enter Integer</button>  
-                    </form>  
+                   
 
-                    <h2 >
-{/*                  
-                 {factorial(this.state.finalValue)} */}
+                    <form className="form-inline">
+                        <div className="form-group mx-sm-3 mb-2">
+                        <label htmlFor="inputPassword2" className="sr-only">Enter integer</label>
+                        <input type="text" className="form-control" value = {this.state.value} onChange = {this.handleChange}  placeholder="Enter Integer" />
+                        </div>
+                        <button type="submit" onClick = {this.onSubmit} className="btn btn-primary mb-2">Submit</button>
+                    </form>
+
+                    <h3 >
                  {factorial(intval)}
-                        </h2>
+                        </h3>
 
               </div>
             )

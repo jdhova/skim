@@ -9,7 +9,28 @@
   text-align: center;
   min-height: 100vh;
 }
+
+
   
+@media screen and (max-width: 400px) {
+  .row { 
+   float: none;
+   margin-right:0;
+   width:auto;
+   border:0;   
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
 /* 
 
 
