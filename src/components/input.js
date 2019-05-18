@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react'
-import work from './algorithms/work'
+// import work from './algorithms/work'
 
 
 class input extends Component {

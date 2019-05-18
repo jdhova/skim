@@ -1,12 +1,12 @@
 
-### To Install
-npm install to install dependencies
+### To Install dependencies
+npm install 
 
 ### To Start
 npm start
 
-### Front-end frame work
-React.js and bootstrap -v 4.3.1
+### Front-end 
+React.js and Bootstrap -v 4.3.1
 
 
 

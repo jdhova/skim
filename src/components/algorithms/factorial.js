@@ -2,7 +2,7 @@
 
 const factorial = function input (n) {
  
-    if(!Number.isInteger(n)) { return ('Number is not an integer so invalid') 
+    if(!Number.isInteger(n)) { return ('Enter any number between 1 and 18') 
   }  // handles erros if there is an empty string '' initial state
 
       if(n < 1) { return ('Number must be an integer')
@@ -11,7 +11,7 @@ const factorial = function input (n) {
       if(n === 1) { return 1  
     } // recursion base
 
-     if (n > 18) { return ('Number should be less than 18')
+     if (n > 18) { return ('Number must be less than 18')
     }
    
     return n * input(n-1) 
