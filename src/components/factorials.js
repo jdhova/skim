@@ -13,7 +13,7 @@ class factorials extends Component {
         }
 
         handleChange = (e) => {
-            this.setState({value: parseInt(e.target.value)})         
+            this.setState({value: (e.target.value)})         
         }
         onSubmit = (e) => {
             e.preventDefault()
@@ -29,7 +29,7 @@ class factorials extends Component {
               <div className = 'input'> 
                     <form className="form-inline">
                         <div className="form-group mx-sm-3 mb-2">
-                        <label htmlFor="inputPassword2" className="sr-only">Enter integer</label>
+                        <label className="sr-only">Enter integer</label>
                         <input type="number" className="form-control" value = {this.state.value} onChange = {this.handleChange}  placeholder="Enter Integer" />
                         </div>
                         <button type="submit" onClick = {this.onSubmit} className="btn btn-primary mb-2">Submit</button>

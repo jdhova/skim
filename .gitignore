@@ -21,3 +21,13 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+
+{/* 
+                    <h2 className='inp'>
+                    { (this.state.finalValue % 15 === 0) ? "SKIM is a nice place to work" :
+                        (this.state.finalValue % 3 === 0)  ? "SKIM": 
+                        (this.state.finalValue % 5 === 0)  ? "is a nice place to work": 
+                        this.state.finalValue }
+                    </h2> */}
