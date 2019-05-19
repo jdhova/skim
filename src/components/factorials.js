@@ -15,12 +15,18 @@ class factorials extends Component {
         handleChange = (e) => {
             this.setState({value: (e.target.value)})         
         }
+
         onSubmit = (e) => {
             e.preventDefault()
             this.setState ({finalValue: this.state.value})
             this.setState({value: ''})    
         }
 
+        onReset = (e) => {
+            e.preventDefault()
+            this.setState({finalValue: ''})
+        }
+      
         render() { 
             const strval = this.state.finalValue
             const intval = parseInt(strval)
@@ -32,11 +38,12 @@ class factorials extends Component {
                         <label className="sr-only">Enter integer</label>
                         <input type="number" className="form-control" value = {this.state.value} onChange = {this.handleChange}  placeholder="Enter Integer" />
                         </div>
-                        <button type="submit" onClick = {this.onSubmit} className="btn btn-primary mb-2">Submit</button>
+                        <button type="submit" onClick = {this.onSubmit} className="btn btn-success mb-2">Submit</button>
                     </form>
-                    <h3 className='fac'>
-                         {factorial(intval)}
-                    </h3>
+
+                        <h2 className='fac'>  {factorial(intval)} </h2>
+
+                        <button type="submit" onClick = {this.onReset} className="btn btn-primary mb-2">Reset</button>          
               </div>
             )
           }
