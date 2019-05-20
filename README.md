@@ -10,7 +10,7 @@ React.js and Bootstrap -v 4.3.1
 
 
 ### Status
-Completed!!!
+Complete!!!
 
 ####  Challange 1
 
