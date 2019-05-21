@@ -15,7 +15,8 @@ const work = (n) => {
       } else {
         arr.push(` ${i},  `)
       }
-    }
+    };
+
     return arr
   
   };
