@@ -18,7 +18,7 @@ const work = (n) => {
     }
     return arr
   
-  }
+  };
   
 
 export default work;

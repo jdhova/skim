@@ -1,6 +1,6 @@
 
-import React, { Component } from 'react'
-import factorial from './algorithms/factorial'
+import React, { Component } from 'react';
+import factorial from './algorithms/factorial';
 import '../App.css';
 
 class factorials extends Component {
@@ -10,26 +10,26 @@ class factorials extends Component {
                 value : '',
                 finalValue :''
             }
-        }
+        };
 
         handleChange = (e) => {
             this.setState({value: (e.target.value)})         
-        }
+        };
 
         onSubmit = (e) => {
             e.preventDefault()
             this.setState ({finalValue: this.state.value})
             this.setState({value: ''})    
-        }
+        };
 
         onReset = (e) => {
             e.preventDefault()
             this.setState({finalValue: ''})
-        }
+        };
       
         render() { 
-            const strval = this.state.finalValue
-            const intval = parseInt(strval)
+            const strval = this.state.finalValue;
+            const intval = parseInt(strval);
         
             return (
               <div className = 'input'> 
@@ -46,9 +46,9 @@ class factorials extends Component {
                         <button type="submit" onClick = {this.onReset} className="btn btn-primary mb-2">Reset</button>          
               </div>
             )
-          }
-    }
+          };
+    };
 
   
-export default factorials
+export default factorials;
 

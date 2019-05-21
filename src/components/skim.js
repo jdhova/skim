@@ -1,7 +1,7 @@
 
-import React, { Component } from 'react'
-import Input from './input'
-import Factorials from './factorials'
+import React, { Component } from 'react';
+import Input from './input';
+import Factorials from './factorials';
 import '../App.css';
 
 class skim extends Component {
@@ -14,9 +14,9 @@ class skim extends Component {
       </div>
     )
   }
-}
+};
 
-export default skim
+export default skim;
 
 
 

@@ -1,12 +1,14 @@
 
 ### To Install dependencies
 npm install 
+npm -v 6.7.0
 
 ### To Start
 npm start
 
 ### Front-end 
 React.js and Bootstrap -v 4.3.1
+
 
 
 ### Status

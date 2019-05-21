@@ -1,6 +1,6 @@
 
-import React, { Component } from 'react'
-import work from './algorithms/work'
+import React, { Component } from 'react';
+import work from './algorithms/work';
 
 class input extends Component {
     constructor(props){
@@ -9,26 +9,26 @@ class input extends Component {
                 value : '',
                 finalValue :''          
             }
-        }
+        };
 
         handleChange = (e) => {
             this.setState({value: (e.target.value)})     
-        }
+        };
 
         onSubmit = (e) => {
             e.preventDefault()
             this.setState ({ finalValue: this.state.value})
             this.setState({value: ''})        
-        }
+        };
 
         onReset = (e) => {
             e.preventDefault()
             this.setState({finalValue : ''})
-        }
+        };
 
         render() { 
-                const strval = this.state.finalValue
-                const intval = parseInt(strval) 
+                const strval = this.state.finalValue;
+                const intval = parseInt(strval); 
 
             return (
               <div className = 'input'>    
@@ -46,9 +46,9 @@ class input extends Component {
               </div>
                 
             )
-          }
-    }
+          };
+    };
 
   
-export default  input
+export default  input;
 
