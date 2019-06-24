@@ -13,7 +13,7 @@ const work = (n) => {
       } else if (i % 3 === 0){
         arr.push(' SKIM, ')
       } else {
-        arr.push(` ${i},  `)
+        arr.push(` ${i}, `)
       }
     };
 

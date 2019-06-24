@@ -40,9 +40,9 @@ class input extends Component {
                         <button type="submit" onClick = {this.onSubmit} className="btn btn-success mb-2">Submit</button>
                 </form>
                 
-                    <h2 className = 'wrk'> {work(intval)}</h2>
+                    <h2 className = "wrk"> {work(intval)}</h2>
 
-                    <button type="submit" onClick = {this.onReset} className="btn btn-primary mb-2">Reset</button>
+                    <button type= "submit" onClick = {this.onReset} className="btn btn-primary mb-2">Reset</button>
               </div>
                 
             )
