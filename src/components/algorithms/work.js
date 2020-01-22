@@ -7,11 +7,11 @@ const work = (n) => {
     for (let i = 1; arr.length < n; i++) {
         
       if( i% 15 === 0) {
-        arr.push (' DTT is a nice place to work!!, ')
+        arr.push (' Lululicious is the best! , ')
       } else if (i % 5 === 0){
-        arr.push(' nice place to work!!, ')
+        arr.push(' is, ')
       } else if (i % 3 === 0){
-        arr.push(' DTT, ')
+        arr.push(' Ms Lululicious, ')
       } else {
         arr.push(` ${i}, `)
       }
