@@ -6,12 +6,12 @@ const work = (n) => {
   
     for (let i = 1; arr.length < n; i++) {
         
-      if( i% 15 === 0) {
-        arr.push ('  the just just the best! , ')
-      } else if (i % 5 === 0){
-        arr.push(' is the best, ')
-      } else if (i % 3 === 0){
-        arr.push(' Lululicious, ')
+      if( i% 6 === 0) {
+        arr.push ('Latifah is the sexiest Angel with Beauty and Brains! , ')
+      } else if (i % 4 === 0){
+        arr.push(' is the sexiest Angel, ')
+      } else if (i % 2 === 0){
+        arr.push(' Latifah, ')
       } else {
         arr.push(` ${i}, `)
       }
