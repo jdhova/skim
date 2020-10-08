@@ -44,7 +44,6 @@ class input extends Component {
           </div>
           <button
             type='submit'
-            // type='submit'
             onClick={this.onSubmit}
             className='btn btn-success mb-2'
           >
