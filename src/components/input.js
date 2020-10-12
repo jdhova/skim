@@ -40,6 +40,7 @@ class input extends Component {
               value={this.state.value}
               onChange={this.handleChange}
               placeholder='Enter integer'
+              // placeholder='Enter integer'
             />
           </div>
           <button
