@@ -53,6 +53,8 @@ class input extends Component {
 
         <h2 className='wrk'> {work(intval)}</h2>
 
+        {/* <h2 className='wrk'> {work(intval)}</h2> */}
+
         <button
           type='submit'
           onClick={this.onReset}
