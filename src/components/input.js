@@ -52,6 +52,7 @@ class input extends Component {
         </form>
 
         <h2 className='wrk'> {work(intval)}</h2>
+        {/* <h2 className='wrk'> {work(intval)}</h2> */}
 
         <button
           type='submit'
