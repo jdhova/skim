@@ -52,8 +52,8 @@ class input extends Component {
         </form>
 
         <h2 className='wrk'> {work(intval)}</h2>
-
-        {/* <button
+        {/* 
+        <button
           type='submit'
           onClick={this.onReset}
           className='btn btn-primary mb-2'
